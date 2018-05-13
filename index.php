@@ -1,9 +1,8 @@
 <?php 
-  define('__ROOT__', dirname(dirname(__FILE__)).'/testing');
-  require_once(__ROOT__.'/config.php');
+  require_once('./config.php');
 ?>
 
-<!doctype html>
+<!doctype html> 
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -20,12 +19,12 @@
     <title>Employee Management</title>
   </head>
   <body>
-     <?php require_once(__ROOT__.'/components/navbar.php'); ?>
+     <?php include('./components/navbar.php'); ?>
      
-     <!-- App mount point  -->
-     <?php require_once(__ROOT__.'/views/index.php'); ?>
+     <!-- Login  -->
+     <?php require('./components/login.php'); ?>
 
-     <?php require_once(__ROOT__.'/components/footer.php'); ?>
+     <?php include('./components/footer.php'); ?>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,28 +1,6 @@
+@import './login.css';
 body {
     background-color:slategrey;
+    overflow-x: hidden !important;
 }
 
-.sign-up-container {
-    height: 450px;
-   
-}
-.sign-up-container  h1, h2, h3, h4, h5, label {
-    color:white;
-}
-
-.jumbotron {
-        text-align:center;
-        background-color:#24323D;
-        position:relative;
-        top:20%;
-        height
-}
-
-#title {
-    text-align: center;
-}
-button {
-    background-color:#1AB188;
-    color:white;
-    cursor:pointer;
-}
