@@ -1,6 +1,2 @@
 @import './login.css';
-body {
-    background-color:slategrey;
-    overflow-x: hidden !important;
-}
-
+@import './sidebar.css';
