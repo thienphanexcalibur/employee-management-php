@@ -1,24 +1,18 @@
 .sign-up-container {
-  height: 450px;
- 
-}
-.sign-up-container  h1, h2, h3, h4, h5, label {
-  color:white;
-}
+  height: 450px; }
+  .sign-up-container h1, .sign-up-container h2, .sign-up-container h3, .sign-up-container h4, .sign-up-container h5, .sign-up-container label {
+    color: white; }
 
 .jumbotron {
-      text-align:center;
-      background-color:#24323D;
-      position:relative;
-      top:20%;
-      height
-}
+  text-align: center;
+  background-color: #24323D;
+  position: relative;
+  top: 20%; }
 
 #title {
-  text-align: center;
-}
+  text-align: center; }
+
 button {
-  background-color:#1AB188;
-  color:white;
-  cursor:pointer;
-}
+  background-color: #1AB188;
+  color: white;
+  cursor: pointer; }

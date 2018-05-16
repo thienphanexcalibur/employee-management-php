@@ -27,7 +27,8 @@ if (isset($_POST)) {
   $password = '';
   $user_name = @$_POST['username'];
   $password = @$_POST['password'];
-  $query = "SELECT * FROM user WHERE username = '$user_name' AND password = '$password'";
+  $hashed_password = md5($password);
+  $query = "SELECT * FROM user WHERE username = '$user_name' AND password = '$hashed_password'";
 
   $result = $conn->query($query);
   if ($result->num_rows == 1) {
@@ -36,7 +37,7 @@ if (isset($_POST)) {
     window.location.href = `${a}/testing/views/manage.php`;
     </script>";
     $_SESSION['username'] = $user_name;
-    $_SESSION['password'] = $password;  
+    $_SESSION['password'] = $hashed_password;
   }
 }
 ?>
