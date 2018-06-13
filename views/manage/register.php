@@ -22,36 +22,7 @@
     <div id="page-content-wrapper">
       <div class="container">
         <h1>Đăng kí nhân viên</h1>
-        <!-- <div class="row ml-2 mt-4">
-          <div class="col-sm-4">
-            <h5>Thông tin cá nhân</h5>
-          </div>
-
-          <div class="col-sm-4">
-            <label>Họ và tên</label>
-            <input class="form-control">
-
-            <label class="mt-3">Vị trí</label>
-            <input class="form-control">
-          </div>
-
-          <div class="col-sm-4">
-          <label>Ngày tháng năm sinh</label>
-            <input class="form-control">
-          <label class="mt-3">Quê quán</label>
-          <input class="form-control">
-          </div>
-
-          <div class="col-sm-4">
-            <h5>Thông tin chung</h5>
-          </div>
-
-          <div class="col-sm-4">
-          <label> </label>
-          <input class="form-control">
-          </div>
-        </div> -->
-        <form method="post" action="<?php $_SERVER["PHP_SELF"] ?>">
+        <form method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label>Họ và tên</label>
@@ -89,7 +60,7 @@
             </select>
             </div>
           
-          <div class="form-group col-md-4">i
+          <div class="form-group col-md-4">
               <label>Tình trạng quan hệ</label>
               <select class="form-control" name="relationship">
                 <option selected>Chọn mối quan hệ</option>
@@ -157,7 +128,6 @@
         $query = "INSERT INTO user (fullname, dob, email, position, salary, current_address, identity_number, gender) VALUES ('$fullname', '$dob', '$email', '$position', '$salary' , '$current_address', '$identity_number', '$gender')";
         $result = $conn->query($query);
         if (isset($result)) {
-          echo 'DONE';
         } else {
           echo 'FAILED';
         }

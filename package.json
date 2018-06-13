@@ -7,6 +7,8 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
-    "semantic-ui-sidebar": "^2.3.1"
+    "semantic-ui-sidebar": "^2.3.1",
+    "typeit": "^5.10.1",
+    "vue-weather-widget": "^2.1.3"
   }
 }
